@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Patient's Information
+    </title>
+    <style>
+        fieldset{
+            text-align: center;
+            margin-left: 320px;
+            margin-right: 320px;
+            border-radius: 25px;
+            
+        }
+body{
+   
+    background-image:url("https://thumbs.dreamstime.com/b/healthcare-technology-doctor-using-digital-tablet-icon-medical-network-hospital-background-162019727.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    background-attachment:fixed;
+}
+.div1{
+border:2px solid purple;
+background-color: purple;
+text-decoration:none;
+color:white;
+}
+
+    </style>
+</head>
+<body>
+    <a class="div1" href="indexpage.html">HOME</a><br>
+    <p style="text-align:center;background-color:#09aeac;font-size: 30px;border-radius: 13px;margin-left: 315px;margin-right: 315px;">Patient's Information</p>
+  <form action="submit.php" method="POST">
+    <fieldset>
+        <br>
+        <br>
+        <legend style="text-align: center;font-size:20px;"><b>Search for current patient:</b></legend>
+      
+        <label for="patient">Search patient by..</label>
+    <input type="number" name="patient id" placeholder="select id">
+    <input type="text" name="area" placeholder="Patient name">
+    <br><br>
+    <input type="button" value="search">
+    <br>
+    <br>
+    </select>
+    </fieldset>
+    <br>
+        <br>
+    <fieldset>
+        <br>
+        <br>
+        <legend style="text-align: center;font-size:20px;"><b>Recovered patient:</b></legend>
+      
+        <label for="patient">Patient Id</label>
+   
+    <input type="text" name="area" placeholder="patient Id">
+ <br><br>  
+    <input type="button" value="search">
+<br>
+<br>
+<br>
+    </select>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <br>
+        <br>
+        <legend style="text-align: center;font-size:20px;"><b>Delete patient Details</Details>:</b></legend>
+      
+        <label for="Patient's Id">Patient's Id &nbsp</label>
+   
+    <input type="text" name="area" placeholder="Patient's Id">
+    <br>
+    <br>
+    <label for="Password">Password &nbsp&nbsp&nbsp</label>
+    <input type="text" name="area" placeholder="Admin's password">
+    <br>
+    <br>
+    <input type="button" value="Delete">
+    <br>
+    <br>
+    </select>
+    </fieldset>
+</form>
+</body>
+</html>

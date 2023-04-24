@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Patient Details</title>
+<style>
+body{
+background-image: url("https://www.microsoft.com/en-us/research/uploads/prod/2023/03/AI-Health_blog-2023Mar_hero_1400x788.jpg");
+/*("https://media.istockphoto.com/id/91156547/es/foto/enfermera-tending-paciente-en-la-unidad-de-cuidados-intensivos.jpg?s=612x612&w=0&k=20&c=nUUrTf61gMnIh3zBF1D4CbeSKmXE_GMvG-bmwiez9qY=");
+("https://media.istockphoto.com/id/1172429034/photo/managing-her-daily-medical-duties.jpg?s=612x612&w=0&k=20&c=AGQvsCrnAP5CfJBZNHcmTzHEOd9SJW5fbY4H_Zootvc=");
+("https://www.microsoft.com/en-us/research/uploads/prod/2023/03/AI-Health_blog-2023Mar_hero_1400x788.jpg");*/
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment:fixed;
+backdrop-filter: blur(5px);
+}
+.div1{
+border:2px solid purple;
+background-color: purple;
+text-decoration:none;
+color:white;
+}
+
+fieldset{
+margin-left:380px;
+margin-right:380px;
+font-size: 20px;
+border:2px solid black;
+border-radius:20px;
+/*text-align:center;*/
+padding-left:75px;
+
+}
+legend{
+border:2px solid brown;
+text-align: center;
+
+}
+.input-field {
+  width: 240px;
+  height: 22px;
+border-radius:5px;
+}
+.sel{
+width: 240px;
+  height: 22px;
+border-radius:5px;
+}
+td{
+/*
+color:purple;*/
+font-size: 20px;
+
+}
+textarea{
+border-radius:10px;
+border:1.6px solid black;
+}
+button{
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<a class="div1" href="indexpage.html">HOME</a><br>
+<fieldset>
+<legend>Patient details</legend><br>
+
+<label>Patient Name *&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="text" class="input-field" required><br><br>
+<label>Patient Age* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="number" min="1" max="100" class="input-field" required><br><br>
+<label for="gender">Gender &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="radio" id="male" name="gender" value="male">
+<label>Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label>Female</label>
+<input type="radio" id="female" name="gender" value="female">
+<label>Others</label>
+<br><br>
+<label>Contact Number* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="number" class="input-field" required>
+<br><br>
+<label>Alternate Number &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="number" class="input-field">
+<br><br>
+<label>Aadhar Number* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="text" class="input-field" required>
+<br><br>
+
+<table>
+<tr>
+<td>Address &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</td>
+<td><textarea id="address" name="address" rows="10" cols="30"></textarea></td>
+</tr>
+</table>
+<br></fieldset><br><br>
+
+<fieldset>
+<legend>Gaurdian details</legend><br>
+
+<label>Name* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="text" class="input-field" required><br><br>
+<label>Age &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="number" min="1" max="100" class="input-field"><br><br>
+<label for="gender">Gender &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="radio" id="male" name="gender" value="male">
+<label>Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label>Female</label>
+<br><br>
+<label>Contact Number* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="number" class="input-field" required>
+<br><br>
+<label>Alternate Number &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="number" class="input-field">
+<br><br>
+<label>Aadhar Number* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="text" class="input-field" required>
+<br><br>
+
+<table>
+<tr>
+<td>Address &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</td>
+<td><textarea id="address" name="address" rows="10" cols="30"></textarea></td>
+</tr>
+</table>
+<br></fieldset><br><br>
+
+<fieldset>
+<legend>COVID19 details</legend><br>
+<label> Did he/she travel in last month? &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<select class="sel">
+<option>Yes</option>
+<option>No</option>
+</select><br><br>
+<label>Vaccine Dose &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<select class="sel">
+<option>1</option>
+<option>2</option>
+</select><br><br>
+<label>Gender &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="radio" id="male" name="gender" value="male">
+<label>Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label>Female</label>
+<br><br>
+<label>Date of last dose &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="date"><br><br>
+<label>Date of last Covid test &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="date"><br><br>
+<label>Is patient showing any symptoms? &nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<select class="sel">
+<option>Yes</option>
+<option>No</option>
+</select>
+<br><br></fieldset><br><br>
+<fieldset>
+<legend>Health Insurance Details</legend><br>
+<label>Insurance membership &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="text" class="input-field"><br><br>
+<label>Insurance number &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="text" class="input-field">
+<br><br></fieldset><br><br>
+<fieldset>
+<legend>Patient Joining Details</legend><br>
+<label>Date of Admission &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="date"><br><br>
+<label>Time of Admission &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+<input type="time">
+<br><br></fieldset><br><br>
+<div style="text-align:center">
+<button type="submit">Submit</button>
+</div>
+</body>
+</html>

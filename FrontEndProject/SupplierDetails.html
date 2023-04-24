@@ -1,0 +1,112 @@
+<DOCTYPE!html>
+<head>
+<title>Supplier Details</title>
+<style>
+body {
+background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/140820151917-electronic-medical-records.jpg?q=w_2166,h_1218,x_0,y_0,c_fill");
+background-size: 100%;
+background-repeat: no-repeat;
+backdrop-filter: blur(5px);
+background-attachment:fixed;
+/*background-position: center;*/
+}
+.sample{
+
+margin-left:250px;
+margin-right:320px;
+}
+.div1{
+border:2px solid purple;
+background-color: purple;
+text-decoration:none;
+color:white;
+}
+fieldset{
+font-size: 20px;
+border:2px solid black;
+border-radius:20px;
+/*text-align:center;*/
+padding-left:75px;
+}
+legend{
+border:2px solid brown;
+text-align: center;
+
+}
+
+table{
+color:black;
+border:3px solid black;
+border-radius:20px;
+
+}
+button{
+background-color:purple;
+color:white;
+}
+
+
+</style>
+</head>
+<body>
+<a class="div1" href="indexpage.html">HOME</a>
+
+<h2 align=center>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Please fill the form below</h2>
+<div class="sample">
+<form action="submit.php" method="POST">
+<fieldset>
+<legend style="text-align: center;font-size:20px;"><b>Supplier Details</b></legend>
+<lable>Supplier ID &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</lable><input type="number" name="Supplier ID:" placeholder="Supplier Id"><br><br>
+<lable>Supplier Name &nbsp&nbsp&nbsp:</lable><input type="name" name="Supplier Name:" placeholder="Supplier Name"><br><br>
+<lable>Date of Supply &nbsp&nbsp&nbsp:</lable><input type="date" name="dos"><br><br>
+<lable>Time of Supply &nbsp&nbsp&nbsp:</lable><input type="time" name="tos"><br><br><br>
+<table border="1" align="center" width="1000" height="300">
+<tr>
+<th>S.No.</th>
+<th>Medicine Name</th>
+<th>Medicine ID</th>
+<th>Supplier</th>
+<th>Manufacturing Date</th>
+<th>Expiry Date</th>
+<th>Quantity(Units)</th>
+<th>Unit Price</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Sitagliptin</td>
+<td>Medicine ID</td>
+<td>PA pharmacies</td>
+<td>01-10-2021</td>
+<td>01-10-2023</td>
+<td>33</td>
+<td>655</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Azitromicine</td>
+<td>Medicine ID</td>
+<td>Appolo Pharmacy</td>
+<td>22-10-2021</td>
+<td>02-05-2022</td>
+<td>85</td>
+<td>452</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Benadryl</td>
+<td>Medicine ID</td>
+<td>Dr.Reddy's Laboratories</td>
+<td>21-11-2021</td>
+<td>28-12-2023</td>
+<td>44</td>
+<td>548</td>
+<tr>
+</table><br><br>
+<div style="text-align: center;">
+<button type="submit">SUBMIT</button>
+</div>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
