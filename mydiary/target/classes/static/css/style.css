@@ -1,0 +1,96 @@
+*{
+	
+	margin:0;
+	padding:0;
+}
+
+.header{
+	width:100%;
+	height:40px;
+	
+}
+
+.first{
+	width:3.3%;
+	float:left;
+	padding-left:10px;
+}
+
+.second{
+	width:88%;
+	float:left;
+	font-size:25px;
+	font-weight:bold;
+	text-align:left;
+	padding-top:20px;
+}
+
+.bodypart{
+	width:100%;
+	text-align:center;
+	
+}
+
+.bodypart1{
+	width:55%;
+	float:left;
+	border:0px solid red;
+	padding-top:5%;
+}
+.bodypart2{
+	width:42%;
+	float:left;
+	border:0px solid green;
+	
+	padding-top:8%;
+}
+
+.formcontrol{
+	width:200px;
+	height:40px;
+}
+
+.label
+{
+	font-size:35px;
+}
+
+button{
+	background-color:SkyBlue;
+	color:black;
+	width:200px;
+	height:40px;
+	font-weight:bold;
+	
+}
+
+.userhome
+{
+	text-align:left;
+	font-size:30px;
+	font-weight:bold;
+	padding:12px;
+}
+
+.heading
+{
+	font-size:30px;
+	color:Orange;
+}
+
+.addbtn{
+	background-color:SteelBlue;
+	color:White;
+	float:right;
+}
+
+table{
+	width:99%;
+	margin:0 auto auto;
+	
+}
+
+td{
+	padding:10px;
+	text-align:left;
+}
